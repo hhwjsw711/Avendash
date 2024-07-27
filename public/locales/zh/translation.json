@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "home": "首页",
+    "dashboard": "仪表盘",
+    "video": "视频",
+    "title": "水质监测系统",
+    "language": "语言",
+    "theme": "主题",
+    "default": "默认",
+    "retro": "复古",
+    "cyberpunk": "赛博朋克",
+    "valentine": "情人节",
+    "wireframe": "线框",
+    "autumn": "秋天",
+    "black": "黑色",
+    "luxury": "奢华",
+    "coffee": "咖啡",
+    "nord": "北欧",
+    "pastel": "粉彩",
+    "cupcake": "杯子蛋糕",
+    "halloween": "万圣节"
+  },
+  "hero": {
+    "title": "水质监测系统",
+    "description": "故障报修请联系：<1></1>",
+    "software": "胡工 19905880291.",
+    "hardware": "徐工 17855831980.",
+    "start": "立即开始"
+  },
+  "footer": {
+    "copyright": "版权所有 © 2024 - {{company}}保留所有权利",
+    "company": "逐梦科技"
+  },
+  "statsensor": {
+    "temperature": "温度: {{sensor1}} ℃",
+    "humidity": "湿度: {{sensor2}} %",
+    "ldrSensor": "LDR 传感器: {{sensor3}} lux",
+    "soil": "土壤湿度: {{sensor4}} cm",
+    "pH": "pH: {{sensor5}}",
+    "turbidity": "浊度: {{sensor6}} NTU",
+    "DO": "溶解氧: {{sensor7}} mg/L"
+  },
+  "ai": {
+    "title": "水质监测系统智能问答助手",
+    "input": "在这里提问",
+    "send": "发送"
+  }
+}

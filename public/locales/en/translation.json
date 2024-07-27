@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "video": "Video",
+    "title": "WQMS",
+    "language": "Language",
+    "theme": "Theme",
+    "default": "Default",
+    "retro": "Retro",
+    "cyberpunk": "Cyberpunk",
+    "valentine": "Valentine",
+    "wireframe": "Wireframe",
+    "autumn": "Autumn",
+    "black": "Black",
+    "luxury": "Luxury",
+    "coffee": "Coffee",
+    "nord": "Nord",
+    "pastel": "Pastel",
+    "cupcake": "Cupcake",
+    "halloween": "Halloween"
+  },
+  "hero": {
+    "title": "WQMS",
+    "description": "Contact us for help: <1></1>",
+    "software": "Mr.Hu 19905880291.",
+    "hardware": "Mr.Xu 17855831980.",
+    "start": "Get Started"
+  },
+  "footer": {
+    "copyright": "Copyright © 2024 - All right reserved by {{company}}",
+    "company": "ZhuMeng Technology"
+  },
+  "statsensor": {
+    "temperature": "Temperature: {{sensor1}} ℃",
+    "humidity": "Humidity: {{sensor2}} %",
+    "ldrSensor": "LDR Sensor: {{sensor3}} lux",
+    "soil": "Soil Moisture: {{sensor4}} cm",
+    "pH": "pH: {{sensor5}}",
+    "turbidity": "Turbidity: {{sensor6}} NTU",
+    "DO": "Dissolved Oxygen: {{sensor7}} mg/L"
+  },
+  "ai": {
+    "title": "WQMS Smart Assistant",
+    "input": "Ask here bro",
+    "send": "Send"
+  }
+}

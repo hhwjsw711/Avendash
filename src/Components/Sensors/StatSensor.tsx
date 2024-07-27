@@ -3,15 +3,28 @@ import Stat from '../stats/Stat'
 import Relay from '../utility/Relay'
 import { gsap } from 'gsap'
 import mqtt, { MqttClient } from 'mqtt'
+import { useTranslation } from 'react-i18next'
 
 interface SensorProps {
   sensor1?: string | number | undefined
   sensor2?: string | number | undefined
   sensor3?: string | number | undefined
   sensor4?: string | number | undefined
+  sensor5?: string | number | undefined
+  sensor6?: string | number | undefined
+  sensor7?: string | number | undefined
 }
 
-const StatSensor = ({ sensor1, sensor2, sensor3, sensor4 }: SensorProps) => {
+const StatSensor = ({
+  sensor1,
+  sensor2,
+  sensor3,
+  sensor4,
+  sensor5,
+  sensor6,
+  sensor7,
+}: SensorProps) => {
+  const { t } = useTranslation()
   const [topic, setTopic] = useState<string>('')
   const [message, setMessage] = useState<string>('')
   const [feedback, setFeedback] = useState<string>('')
@@ -112,10 +125,14 @@ const StatSensor = ({ sensor1, sensor2, sensor3, sensor4 }: SensorProps) => {
         ref={indicatorTopRef}
       >
         <Stat addClass={`${themeHtL(sensor1)}`}>
-          <h1 className="text-xl font-semibold">Temperature: {sensor1} ℃</h1>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.temperature', { sensor1 })}
+          </h1>
         </Stat>
         <Stat addClass={`${themeLtH(sensor2)}`}>
-          <h1 className="text-xl font-semibold">Humidity: {sensor2} %</h1>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.humidity', { sensor2 })}
+          </h1>
         </Stat>
       </div>
       <div
@@ -123,10 +140,39 @@ const StatSensor = ({ sensor1, sensor2, sensor3, sensor4 }: SensorProps) => {
         ref={indicatorBottomRef}
       >
         <Stat addClass={`${themeLtH(sensor3)}`}>
-          <h1 className="text-xl font-semibold">LDR Sensor: {sensor3} lux</h1>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.ldrSensor', { sensor3 })}
+          </h1>
         </Stat>
         <Stat addClass={`${themeHtL(sensor4)}`}>
-          <h1 className="text-xl font-semibold">Soil Moisture: {sensor4} cm</h1>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.soil', { sensor4 })}
+          </h1>
+        </Stat>
+      </div>
+      <div
+        className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
+        ref={indicatorBottomRef}
+      >
+        <Stat addClass={`${themeLtH(sensor5)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.pH', { sensor5 })}
+          </h1>
+        </Stat>
+        <Stat addClass={`${themeHtL(sensor6)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.turbidity', { sensor6 })}
+          </h1>
+        </Stat>
+      </div>
+      <div
+        className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
+        ref={indicatorBottomRef}
+      >
+        <Stat addClass={`${themeLtH(sensor7)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.DO', { sensor7 })}
+          </h1>
         </Stat>
       </div>
 

@@ -6,6 +6,9 @@ interface Message {
   humidity?: number | undefined
   ldrSensor?: number | undefined
   soil?: number | undefined
+  pH?: number | undefined
+  turbidity?: number | undefined
+  DO?: number | undefined
 }
 
 const MQTTComponent = () => {

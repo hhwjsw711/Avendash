@@ -7,9 +7,12 @@ interface SensorProps {
   sensor2?: string | undefined | number
   sensor3?: string | undefined | number
   sensor4?: string | undefined | number
+  sensor5?: string | undefined | number
+  sensor6?: string | undefined | number
+  sensor7?: string | undefined | number
 }
 
-const Sensors = ({ sensor1, sensor2, sensor3, sensor4 }: SensorProps) => {
+const Sensors = ({ sensor1, sensor2, sensor3, sensor4, sensor5, sensor6, sensor7 }: SensorProps) => {
   return (
     <>
       <Navbar addClass="" />
@@ -18,6 +21,9 @@ const Sensors = ({ sensor1, sensor2, sensor3, sensor4 }: SensorProps) => {
         sensor2={sensor2}
         sensor3={sensor3}
         sensor4={sensor4}
+        sensor5={sensor5}
+        sensor6={sensor6}
+        sensor7={sensor7}
       />
       <Footer addClass="mt-10" />
     </>
