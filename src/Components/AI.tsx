@@ -1,29 +1,42 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { main } from '../ai'
 import useDebounce from '../hooks/useDebounce'
 import { gsap } from 'gsap'
 import { useTranslation } from 'react-i18next'
 
 const Ai = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [userMessage, setUserMessage] = useState<string>('')
   const [result, setResult] = useState<string | undefined>('')
   const { debounce } = useDebounce()
 
+  const getModel = async (lang: string) => {
+    if (lang.startsWith('zh')) {
+      const { main } = await import('../cai')
+
+      return main
+    } else {
+      const { main } = await import('../ai')
+
+      return main
+    }
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       if (userMessage.trim() !== '') {
+        const main = await getModel(i18n.language)
         const newResult = await main(userMessage)
         setResult(newResult)
       }
     }
     const debouncedFetchData = debounce(fetchData, 10000000)
     debouncedFetchData()
-  }, [userMessage, debounce])
+  }, [userMessage, debounce, i18n.language])
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
     if (userMessage.trim() !== '') {
+      const main = await getModel(i18n.language)
       const newResult = await main(userMessage)
       setResult(newResult)
     }
