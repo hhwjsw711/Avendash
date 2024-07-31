@@ -4,8 +4,16 @@ import Navbar from '../Components/Navbar'
 import { Typewriter } from 'react-simple-typewriter'
 import Spline from '@splinetool/react-spline'
 import { gsap } from 'gsap'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
+
+const getSplineScene = (lang: string) => {
+  if (lang.startsWith('zh')) {
+    return '/splines/chineseScene.splinecode'
+  } else {
+    return '/splines/englishScene.splinecode'
+  }
+}
 
 const Hero = () => {
   const { t, i18n } = useTranslation()
@@ -13,16 +21,10 @@ const Hero = () => {
   const buttonRef = useRef(null)
   const descRef = useRef(null)
   const words = [t('hero.software'), t('hero.hardware')]
-
-  const getSplineScene = () => {
-    if (i18n.language === 'zh') {
-      return '/splines/chineseScene.splinecode'
-    } else {
-      return '/splines/englishScene.splinecode'
-    }
-  }
+  const [splineScene, setSplineScene] = useState<string>('')
 
   useEffect(() => {
+    setSplineScene(getSplineScene(i18n.language))
     gsap.fromTo(
       titleRef.current,
       { opacity: 0, x: -400 },
@@ -38,13 +40,13 @@ const Hero = () => {
       { opacity: 0, x: 400 },
       { opacity: 1, x: 0, duration: 2 },
     )
-  }, [])
+  }, [i18n.language])
 
   return (
     <div className="box-border min-h-screen w-full">
       <Navbar addClass="fixed top-0 z-10" />
       <div className="hero min-h-screen bg-base-200">
-        <Spline scene={getSplineScene()} />
+        {splineScene && <Spline scene={splineScene} />}
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="title text-6xl font-bold xl:text-8xl" ref={titleRef}>
