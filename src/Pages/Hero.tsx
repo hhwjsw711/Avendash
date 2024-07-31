@@ -2,17 +2,25 @@ import { NavLink } from 'react-router-dom'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { Typewriter } from 'react-simple-typewriter'
-
+import Spline from '@splinetool/react-spline'
 import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 
 const Hero = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const titleRef = useRef(null)
   const buttonRef = useRef(null)
   const descRef = useRef(null)
   const words = [t('hero.software'), t('hero.hardware')]
+
+  const getSplineScene = () => {
+    if (i18n.language === 'zh') {
+      return '/splines/chineseScene.splinecode'
+    } else {
+      return '/splines/englishScene.splinecode'
+    }
+  }
 
   useEffect(() => {
     gsap.fromTo(
@@ -36,6 +44,7 @@ const Hero = () => {
     <div className="box-border min-h-screen w-full">
       <Navbar addClass="fixed top-0 z-10" />
       <div className="hero min-h-screen bg-base-200">
+        <Spline scene={getSplineScene()} />
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="title text-6xl font-bold xl:text-8xl" ref={titleRef}>
@@ -45,10 +54,7 @@ const Hero = () => {
             <p className="py-6 text-xl" ref={descRef}>
               <Trans i18nKey="hero.description">
                 Simple Mqtt Dashboard with
-                <Typewriter
-                  words={words}
-                  loop={0}
-                />
+                <Typewriter words={words} loop={0} />
               </Trans>
             </p>
             <NavLink

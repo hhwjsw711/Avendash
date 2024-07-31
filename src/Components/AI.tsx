@@ -12,11 +12,9 @@ const Ai = () => {
   const getModel = async (lang: string) => {
     if (lang.startsWith('zh')) {
       const { main } = await import('../cai')
-
       return main
     } else {
       const { main } = await import('../ai')
-
       return main
     }
   }
