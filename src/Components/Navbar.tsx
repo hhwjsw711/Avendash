@@ -48,7 +48,7 @@ const Navbar = ({ addClass }: NavbarProps) => {
                 <NavLink to={'/sensors'}>{t('navbar.dashboard')}</NavLink>
               </li>
               <li>
-              <a href="https://www.bilibili.com" target="_blank" rel="noopener noreferrer">{t('navbar.video')}</a>
+                <NavLink to={'/videos'}>{t('navbar.video')}</NavLink>
               </li>
             </ul>
           </div>

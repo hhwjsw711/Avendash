@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Sensors from './Pages/Sensors'
 import Hero from './Pages/Hero'
+import Videos from './Pages/Videos'
 import MQTTComponent from './server/Mqtt'
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             />
           }
         />
+        <Route path="/videos" element={<Videos />} />
       </Routes>
     </Router>
   )
