@@ -65,7 +65,6 @@ const fetchLatestReport = async (): Promise<Report | null> => {
 
 const HTTPComponent = () => {
   const [latestMessage, setLatestMessage] = useState<Message>({})
-  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,7 +74,7 @@ const HTTPComponent = () => {
           setLatestMessage(convertToMessage(latestReport))
         }
       } catch {
-        setError('There was a problem with the fetch operation.')
+        // Optionally handle errors here
       }
     }
 
