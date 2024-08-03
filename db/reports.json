@@ -1,0 +1,52 @@
+[
+  {
+    "id": "k2kq3z81ql1wy4m47290vlry",
+    "dissolvedoxygen": 5.99,
+    "turbidity": 13.4,
+    "waterPH": 7.84,
+    "waterT": 26.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-03T05:55:13.000Z",
+    "createdAt": "2024-08-03T12:49:51.535Z"
+  },
+  {
+    "id": "j69yictf8djfys7aroujeydi",
+    "dissolvedoxygen": 5.99,
+    "turbidity": 13.4,
+    "waterPH": 7.84,
+    "waterT": 26.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-03T05:55:13.000Z",
+    "createdAt": "2024-08-03T12:51:06.771Z"
+  },
+  {
+    "id": "z5yv6zh9moh561j2bybuv2a1",
+    "dissolvedoxygen": 5.99,
+    "turbidity": 13.4,
+    "waterPH": 10.84,
+    "waterT": 26.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-03T05:55:13.000Z",
+    "createdAt": "2024-08-03T15:37:17.788Z"
+  },
+  {
+    "id": "a5j6k0kredf57h7m10r5uv5n",
+    "dissolvedoxygen": 5.99,
+    "turbidity": 13.4,
+    "waterPH": 10.84,
+    "waterT": 36.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-03T05:55:13.000Z",
+    "createdAt": "2024-08-03T15:39:11.713Z"
+  },
+  {
+    "id": "y597wmsk0j7n1yi2dpp5k7t1",
+    "dissolvedoxygen": 5.99,
+    "turbidity": 13.4,
+    "waterPH": 10.84,
+    "waterT": 16.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-03T05:55:13.000Z",
+    "createdAt": "2024-08-03T16:20:19.601Z"
+  }
+]

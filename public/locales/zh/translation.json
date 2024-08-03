@@ -38,7 +38,8 @@
     "soil": "土壤湿度: {{sensor4}} cm",
     "pH": "pH: {{sensor5}}",
     "turbidity": "浊度: {{sensor6}} NTU",
-    "DO": "溶解氧: {{sensor7}} mg/L"
+    "DO": "溶解氧: {{sensor7}} mg/L",
+    "T": "温度: {{sensor8}} ℃"
   },
   "ai": {
     "title": "水质监测系统智能问答助手",

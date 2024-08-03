@@ -3,9 +3,12 @@ import Sensors from './Pages/Sensors'
 import Hero from './Pages/Hero'
 import Videos from './Pages/Videos'
 import MQTTComponent from './server/Mqtt'
+import HTTPComponent from './server/Http'
 
 const App = () => {
-  const { temperature, humidity, ldrSensor, soil, pH, turbidity, DO } = MQTTComponent()
+  const { temperature, humidity, ldrSensor, soil } = MQTTComponent()
+
+  const { pH, turbidity, DO, T } = HTTPComponent()
 
   const applyCeil = (value: number | undefined) =>
     value !== undefined ? Math.ceil(value) : undefined
@@ -25,6 +28,7 @@ const App = () => {
               sensor5={applyCeil(pH)}
               sensor6={applyCeil(turbidity)}
               sensor7={applyCeil(DO)}
+              sensor8={applyCeil(T)}
             />
           }
         />

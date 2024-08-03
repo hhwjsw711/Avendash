@@ -38,7 +38,8 @@
     "soil": "Soil Moisture: {{sensor4}} cm",
     "pH": "pH: {{sensor5}}",
     "turbidity": "Turbidity: {{sensor6}} NTU",
-    "DO": "Dissolved Oxygen: {{sensor7}} mg/L"
+    "DO": "Dissolved Oxygen: {{sensor7}} mg/L",
+    "T": "Temperature: {{sensor8}} ℃"
   },
   "ai": {
     "title": "WQMS Smart Assistant",

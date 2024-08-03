@@ -10,6 +10,7 @@ interface SensorProps {
   sensor5?: string | number
   sensor6?: string | number
   sensor7?: string | number
+  sensor8?: string | number
 }
 const calculateBrightness = (ldrRawValue: number) => {
   const gamma = 0.7
@@ -37,7 +38,7 @@ const map = (
   return ((x - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
 }
 
-const Sensor = ({ sensor1, sensor2, sensor3, sensor4, sensor5, sensor6, sensor7 }: SensorProps) => {
+const Sensor = ({ sensor1, sensor2, sensor3, sensor4, sensor5, sensor6, sensor7, sensor8 }: SensorProps) => {
   const [brightness, setBrightness] = useState<number | undefined>(undefined)
 
   useEffect(() => {
@@ -62,6 +63,7 @@ const Sensor = ({ sensor1, sensor2, sensor3, sensor4, sensor5, sensor6, sensor7 
         sensor5={sensor5}
         sensor6={sensor6}
         sensor7={sensor7}
+        sensor8={sensor8}
       />
       <AI />
     </div>

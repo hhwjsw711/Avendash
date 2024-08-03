@@ -13,6 +13,7 @@ interface SensorProps {
   sensor5?: string | number | undefined
   sensor6?: string | number | undefined
   sensor7?: string | number | undefined
+  sensor8?: string | number | undefined
 }
 
 const StatSensor = ({
@@ -23,6 +24,7 @@ const StatSensor = ({
   sensor5,
   sensor6,
   sensor7,
+  sensor8,
 }: SensorProps) => {
   const { t } = useTranslation()
   const [topic, setTopic] = useState<string>('')
@@ -172,6 +174,11 @@ const StatSensor = ({
         <Stat addClass={`${themeLtH(sensor7)}`}>
           <h1 className="text-xl font-semibold">
             {t('statsensor.DO', { sensor7 })}
+          </h1>
+        </Stat>
+        <Stat addClass={`${themeHtL(sensor8)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.T', { sensor8 })}
           </h1>
         </Stat>
       </div>
