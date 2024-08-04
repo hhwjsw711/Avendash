@@ -3,25 +3,17 @@ import Navbar from '../Components/Navbar'
 import Sensor from '../Components/Sensor'
 
 interface SensorProps {
-  sensor1?: string | undefined | number
-  sensor2?: string | undefined | number
-  sensor3?: string | undefined | number
-  sensor4?: string | undefined | number
   sensor5?: string | undefined | number
   sensor6?: string | undefined | number
   sensor7?: string | undefined | number
   sensor8?: string | undefined | number
 }
 
-const Sensors = ({ sensor1, sensor2, sensor3, sensor4, sensor5, sensor6, sensor7, sensor8 }: SensorProps) => {
+const Sensors = ({ sensor5, sensor6, sensor7, sensor8 }: SensorProps) => {
   return (
     <>
       <Navbar addClass="" />
       <Sensor
-        sensor1={sensor1}
-        sensor2={sensor2}
-        sensor3={sensor3}
-        sensor4={sensor4}
         sensor5={sensor5}
         sensor6={sensor6}
         sensor7={sensor7}

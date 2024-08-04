@@ -2,11 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Sensors from './Pages/Sensors'
 import Hero from './Pages/Hero'
 import Videos from './Pages/Videos'
-import MQTTComponent from './server/Mqtt'
 import HTTPComponent from './server/Http'
 
 const App = () => {
-  const { temperature, humidity, ldrSensor, soil } = MQTTComponent()
 
   const { pH, turbidity, DO, T } = HTTPComponent()
 
@@ -21,10 +19,6 @@ const App = () => {
           path="/sensors"
           element={
             <Sensors
-              sensor1={applyCeil(temperature)}
-              sensor2={applyCeil(humidity)}
-              sensor3={applyCeil(ldrSensor)}
-              sensor4={applyCeil(soil)}
               sensor5={applyCeil(pH)}
               sensor6={applyCeil(turbidity)}
               sensor7={applyCeil(DO)}
