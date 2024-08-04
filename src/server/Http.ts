@@ -30,7 +30,7 @@ const convertToMessage = (report: Report): Message => {
 const fetchLatestReport = async (): Promise<Report | null> => {
   try {
     /* const response = await fetch('http://localhost:5173/api/reports', { */
-    const response = await fetch('https://avendash.onrender.com/api/reports', {
+    const response = await fetch('https://lszmwh.cn/api/reports', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
