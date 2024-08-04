@@ -27,6 +27,9 @@
     "hardware": "徐工 17855831980.",
     "start": "立即开始"
   },
+  "videos": {
+    "title": "视频监控"
+  },
   "footer": {
     "copyright": "版权所有 © 2024 - {{company}}保留所有权利",
     "company": "逐梦科技"

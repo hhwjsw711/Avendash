@@ -27,6 +27,9 @@
     "hardware": "Mr.Xu 17855831980.",
     "start": "Get Started"
   },
+  "videos": {
+    "title": "Video Surveillance"
+  },
   "footer": {
     "copyright": "Copyright © 2024 - All right reserved by {{company}}",
     "company": "ZhuMeng Technology"

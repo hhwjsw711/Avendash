@@ -126,46 +126,31 @@ const StatSensor = ({
         className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
         ref={indicatorTopRef}
       >
-        <Stat addClass={`${themeHtL(sensor1)}`}>
-          <h1 className="text-xl font-semibold">
-            {t('statsensor.temperature', { sensor1 })}
-          </h1>
-        </Stat>
-        <Stat addClass={`${themeLtH(sensor2)}`}>
-          <h1 className="text-xl font-semibold">
-            {t('statsensor.humidity', { sensor2 })}
-          </h1>
-        </Stat>
-      </div>
-      <div
-        className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
-        ref={indicatorBottomRef}
-      >
-        <Stat addClass={`${themeLtH(sensor3)}`}>
-          <h1 className="text-xl font-semibold">
-            {t('statsensor.ldrSensor', { sensor3 })}
-          </h1>
-        </Stat>
-        <Stat addClass={`${themeHtL(sensor4)}`}>
-          <h1 className="text-xl font-semibold">
-            {t('statsensor.soil', { sensor4 })}
-          </h1>
-        </Stat>
-      </div>
-      <div
-        className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
-        ref={indicatorBottomRef}
-      >
-        <Stat addClass={`${themeLtH(sensor5)}`}>
+        <Stat addClass={`${themeHtL(sensor5)}`}>
           <h1 className="text-xl font-semibold">
             {t('statsensor.pH', { sensor5 })}
           </h1>
         </Stat>
-        <Stat addClass={`${themeHtL(sensor6)}`}>
+        {/* <Stat addClass={`${themeLtH(sensor2)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.humidity', { sensor2 })}
+          </h1>
+        </Stat> */}
+      </div>
+      <div
+        className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
+        ref={indicatorBottomRef}
+      >
+        <Stat addClass={`${themeLtH(sensor6)}`}>
           <h1 className="text-xl font-semibold">
             {t('statsensor.turbidity', { sensor6 })}
           </h1>
         </Stat>
+        {/* <Stat addClass={`${themeHtL(sensor4)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.soil', { sensor4 })}
+          </h1>
+        </Stat> */}
       </div>
       <div
         className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
@@ -176,14 +161,29 @@ const StatSensor = ({
             {t('statsensor.DO', { sensor7 })}
           </h1>
         </Stat>
-        <Stat addClass={`${themeHtL(sensor8)}`}>
+        {/* <Stat addClass={`${themeHtL(sensor6)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.turbidity', { sensor6 })}
+          </h1>
+        </Stat> */}
+      </div>
+      <div
+        className="sensor-text flex h-full w-full flex-col gap-5 md:flex-row"
+        ref={indicatorBottomRef}
+      >
+        <Stat addClass={`${themeLtH(sensor8)}`}>
           <h1 className="text-xl font-semibold">
             {t('statsensor.T', { sensor8 })}
           </h1>
         </Stat>
+        {/* <Stat addClass={`${themeHtL(sensor8)}`}>
+          <h1 className="text-xl font-semibold">
+            {t('statsensor.T', { sensor8 })}
+          </h1>
+        </Stat> */}
       </div>
 
-      <div
+      {/* <div
         ref={sensorRef}
         className="sensor-chat bg-based-100 box-border w-full flex-1 rounded-box px-10 py-8 shadow-sm shadow-primary"
       >
@@ -222,7 +222,7 @@ const StatSensor = ({
             </div>
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   )
 }
