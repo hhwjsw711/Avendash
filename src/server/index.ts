@@ -2,7 +2,7 @@ import express from 'express'
 import { api } from './api'
 
 const app = express()
-app.use(api)
+app.use('/api', api)
 app.use(express.static(process.cwd() + '/dist'))
 
 app.get('*', (req, res) => {
