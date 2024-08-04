@@ -28,9 +28,9 @@ const convertToMessage = (report: Report): Message => {
 }
 
 const fetchLatestReport = async (): Promise<Report | null> => {
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5173'
   try {
-    /* const response = await fetch('http://localhost:5173/api/reports', { */
-    const response = await fetch('https://lszmwh.cn/api/reports', {
+    const response = await fetch(`${apiUrl}/api/reports`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
