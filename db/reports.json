@@ -48,5 +48,35 @@
     "clientId": "ezOXlmYrm1xn3K0ZpHdt",
     "detectedTime": "2024-08-03T05:55:13.000Z",
     "createdAt": "2024-08-03T16:20:19.601Z"
+  },
+  {
+    "id": "f98xhe24blrk7huohqeri4xd",
+    "dissolvedoxygen": 2.99,
+    "turbidity": 33.4,
+    "waterPH": 7.84,
+    "waterT": 41.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-04T05:55:13.000Z",
+    "createdAt": "2024-08-04T02:23:27.488Z"
+  },
+  {
+    "id": "cgl08lconbxwvl8mh3gfo4g6",
+    "dissolvedoxygen": 2.99,
+    "turbidity": 33.4,
+    "waterPH": 1.84,
+    "waterT": 51.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-04T05:55:13.000Z",
+    "createdAt": "2024-08-04T02:24:20.104Z"
+  },
+  {
+    "id": "fgxr56j1lm4dyrk11diwedgs",
+    "dissolvedoxygen": 2.99,
+    "turbidity": 77.4,
+    "waterPH": 1.84,
+    "waterT": 51.6,
+    "clientId": "ezOXlmYrm1xn3K0ZpHdt",
+    "detectedTime": "2024-08-04T05:55:13.000Z",
+    "createdAt": "2024-08-04T02:24:41.063Z"
   }
 ]
