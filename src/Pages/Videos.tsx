@@ -20,7 +20,7 @@ const Videos = () => {
           }
         >
           <iframe
-            src="https://ls.578.cn/2020/live.php"
+            src="http://ls.578.cn/2020/live.php"
             title="Example"
             height={720}
             width={1400}
